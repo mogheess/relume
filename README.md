@@ -11,6 +11,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/mogheess/relume/releases/latest/download/Relume.exe"><b>Download for Windows</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/mogheess/relume/releases/latest">All downloads</a>
+</p>
+
+<p align="center">
   <img src="docs/scanning.png" alt="Relume scanning a memory card: live storage map, counters and results in folders">
 </p>
 
@@ -68,15 +74,24 @@ MPEG-TS, AVCHD MTS/M2TS.
 
 Photos show dimensions, camera and capture date. Videos show resolution, duration and codec.
 
+## Download
+
+**[Download Relume.exe](https://github.com/mogheess/relume/releases/latest/download/Relume.exe)**
+for 64-bit Windows 10 or 11. No installer: just run it. The
+[releases page](https://github.com/mogheess/relume/releases/latest) also has the command line
+version, a zip with everything, and SHA256 checksums.
+
+Windows may say **"Windows protected your PC"** because the app isn't code-signed yet. Click
+**More info**, then **Run anyway**. Every release is built from this source by GitHub Actions.
+
 ## Getting started
 
-1. Download `Relume-windows-x64.zip` from the **Releases** page (or build it, below) and unzip.
-2. Run **Relume.exe** and allow the administrator prompt. Windows only lets administrators read
-   drives directly.
-3. Pick where the files were: a folder, the Recycle Bin, a drive or memory card, a whole disk for
+1. Run **Relume.exe** and allow the administrator prompt. Windows only lets administrators read
+   drives directly. Relume only reads; it never changes the drive you scan.
+2. Pick where the files were: a folder, the Recycle Bin, a drive or memory card, a whole disk for
    formatted or lost partitions, or a disk image.
-4. Choose **Photos** and/or **Videos**, keep **Complete**, and press **Start scan**.
-5. Browse the results, tick files or whole folders (Shift for a range, Ctrl for one more), and
+3. Choose **Photos** and/or **Videos**, keep **Complete**, and press **Start scan**.
+4. Browse the results, tick files or whole folders (Shift for a range, Ctrl for one more), and
    press **Recover**. Save to a different drive, such as a USB stick.
 
 > **Tips.** Stop using the drive as soon as you notice the loss. SSDs usually erase deleted data
