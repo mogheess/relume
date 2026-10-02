@@ -1,0 +1,33 @@
+[package]
+name = "relume"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Relume: photo and video recovery for Windows"
+build = "build.rs"
+
+[[bin]]
+name = "Relume"
+path = "src/main.rs"
+
+[features]
+# Test-only hooks: RELUME_SCREENSHOT, RELUME_AUTOSCAN, RELUME_SIZE, RELUME_THEME.
+dev-hooks = ["relume-core/dev-hooks"]
+
+[dependencies]
+relume-core = { path = "../core" }
+eframe = { version = "0.36", default-features = false, features = ["default_fonts", "glow", "wgpu", "accesskit"] }
+egui_extras = { version = "0.36", default-features = false }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "gif", "bmp", "tiff", "webp"] }
+rfd = "0.17"
+dirs = "6"
+egui-phosphor = "0.14"
+damascene-fonts-inter = "0.1"
+
+[build-dependencies]
+embed-resource = "3"
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.62", features = ["Win32_Foundation", "Win32_Graphics_Imaging", "Win32_System_Com"] }

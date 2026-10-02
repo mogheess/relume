@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = ["core", "gui", "cli"]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+authors = ["mogheess"]
+repository = "https://github.com/mogheess/relume"
+homepage = "https://github.com/mogheess/relume"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+strip = true
+
+[profile.dev.package."*"]
+opt-level = 2
