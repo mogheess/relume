@@ -14,6 +14,8 @@
   <a href="https://github.com/mogheess/relume/releases/latest/download/Relume.exe"><b>Download for Windows</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/mogheess/relume/releases/latest">All downloads</a>
+  &nbsp;·&nbsp;
+  <a href="https://ko-fi.com/moghees">Support on Ko-fi</a>
 </p>
 
 <p align="center">
@@ -173,6 +175,14 @@ testdata/  scripts that build test disk images and verify recovery
 - NTFS-compressed and EFS-encrypted files are recovered as stored, and flagged.
 - File systems: NTFS, FAT12/16/32, exFAT. Others (ReFS, APFS, ext4) get the deep scan only.
 - HEIC and AVIF previews use the Windows HEIF Image Extension. Without it, use **Open**.
+
+## Support Relume
+
+Relume is free and always will be. If it got your photos back, you can say thanks with a coffee:
+
+<a href="https://ko-fi.com/moghees"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support Relume on Ko-fi"></a>
+
+Stars, bug reports and sharing it with someone who just lost their photos help too.
 
 ## License
 
